@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Room Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--<form action="" method="POST">-->
+
+  <div class="container">
+    <h1>Hotel Room Booking</h1>
+    
+    <form id="bookingForm" >
+      <div class="form-group">
+        <label for="roomType">Select Room Type:</label>
+        <select id="roomType" name="roomType">
+          <option value="single">Single Room - ksh1,000/night</option>
+          <option value="double">Double Room - ksh1,500/night</option>
+          <option value="suite">Suite - ksh2,500/night</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="checkInDate">Check-in Date:</label>
+        <input type="date" id="checkInDate" name="checkInDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="checkOutDate">Check-out Date:</label>
+        <input type="date" id="checkOutDate" name="checkOutDate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="guestCount">Number of Guests:</label>
+        <input type="number" id="guestCount" name="guestCount" min="1" required>
+      </div>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <div id="bookingSummary" class="hidden">
+      <h2>Your Booking Summary</h2>
+      <p id="summaryRoomType"></p>
+      <p id="summaryDates"></p>
+      <p id="summaryGuests"></p>
+      <p id="totalPrice"></p>
+    </div>
+  </div>
+  <!--</form>-->
+
+  <script src="modified.js"></script>
+</body>
+</html>
