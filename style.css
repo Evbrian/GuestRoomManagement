@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* Global Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f6f9fc, #e0f7fa);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 500px;
+  background-color: #ffffff;
+  margin: 50px auto;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading */
+h1, h2 {
+  text-align: center;
+  color: #00695c;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+/* Button */
+button {
+  display: block;
+  width: 100%;
+  background-color: #00796b;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* Booking Summary */
+#bookingSummary {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f8e9;
+  border-left: 5px solid #689f38;
+  border-radius: 8px;
+  color: #2e7d32;
+}
+
+/* Hide elements with class 'hidden' */
+.hidden {
+  display: none;
+}
